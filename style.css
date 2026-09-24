@@ -1,0 +1,52 @@
+/*Body*/
+
+body{
+    padding: 0px;
+    width: 375px;
+    margin: 20px;
+}
+
+/*Header*/
+
+header{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*General*/
+
+p{
+    width: 335px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 30px;
+}
+
+/*Imagenes*/
+
+img{
+    height: 160px;
+    width: 160px;
+}
+
+/*Titulos*/
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 18px;
+    color: #B8AB93;
+    font-family: Arial;
+    line-height: 24px;
+}
+
+h4{
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 100px;
+}
+/*Clases*/
