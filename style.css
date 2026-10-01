@@ -1,5 +1,13 @@
 /*Header*/
-
+.card-background {
+  background-color: #f3f0e8; /* El color beige del fondo */
+  width: 100%;
+  height: 500px;
+  
+  /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+  /* Ajusta el 85% para cambiar la inclinación */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); 
+}
 header{
     padding-top: 80px;
     flex-direction: column;
@@ -16,14 +24,21 @@ header h3{
 
 /*General*/
 
-p{
+p {
     font-size: 18px;
-    font-family: Arial;
+    font-family: "PT Sans Narrow", sans-serif;
     line-height: 30px;
+    margin: 0;
 }
 
+
 a{
-    font-style: none;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-style: normal;
     color: rgb(29, 158, 187);
     text-decoration: none;
 }
@@ -31,7 +46,7 @@ a{
 /*Div's*/
 
 div{
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 /*Imagenes*/
@@ -55,12 +70,16 @@ h2{
     font-size: 36px;
 }
 
-h3{
+h3 {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
     font-size: 18px;
-    color: #B8AB93;
-    font-family: Arial;
     line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B8AB93;
 }
+
 
 h4{
     font-size: 18px;
@@ -92,7 +111,7 @@ h4{
 .bellow h2{
     font-size: 40px;
     font-weight: 900px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
 }   
 
 /*Icons*/
@@ -112,3 +131,4 @@ button{
     color: white;
     background-color: #0699A6;
 }
+
