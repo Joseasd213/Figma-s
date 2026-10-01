@@ -1,11 +1,3 @@
-/*Body*/
-
-body{
-    padding: 0px;
-    width: 375px;
-    margin: 20px;
-}
-
 /*Header*/
 
 header{
@@ -13,15 +5,33 @@ header{
     align-items: center;
     text-align: center;
 }
+
+header h3{
+    font-size: 12px;
+    color: #B8AB93;
+    font-family: Arial;
+    line-height: 24px; 
+}
+
 /*General*/
 
 p{
-    width: 335px;
     font-size: 18px;
     font-family: Arial;
     line-height: 30px;
 }
 
+a{
+    font-style: none;
+    color: rgb(29, 158, 187);
+    text-decoration: none;
+}
+
+/*Div's*/
+
+div{
+    padding-top: 35px;
+}
 /*Imagenes*/
 
 img{
@@ -30,9 +40,15 @@ img{
 }
 
 /*Titulos*/
+
 h1{
     font-size: 56px;
+    font-weight: 900px;
+    line-height: 46px;
+    word-spacing: -2.17px;
+    margin: 20px;
 }
+
 h2{
     font-size: 36px;
 }
@@ -49,4 +65,38 @@ h4{
     font-family: Arial;
     font-weight: 100px;
 }
+
 /*Clases*/
+
+
+
+/*Bellow*/
+
+.bellow{
+    padding: 100px 0 100px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.bellow img{
+    width: 25px;
+    height: 25px;
+}
+
+.bellow p{
+    font-size: 26px;
+}
+
+.bellow h2{
+    font-size: 40px;
+    font-weight: 900px;
+    font-family: 'Times New Roman', Times, serif;
+}   
+
+/*Icons*/
+
+.icons{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
