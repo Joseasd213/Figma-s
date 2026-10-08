@@ -116,11 +116,13 @@ h4{
 
 /*Icons*/
 
-.icons{
+.icons-gallery{
     display: flex;
     padding-top: 50px;
+    justify-content: center;
     justify-content: space-around;
 }
+
 
 /*Buttons*/
 
@@ -132,3 +134,36 @@ button{
     background-color: #0699A6;
 }
 
+
+@media (min-width: 1200px){
+    p{
+        font-size: 22px;
+    }
+    h2{
+       font-size: 48px; 
+    }
+    h1{
+        font-size: 68px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    header h3{
+        font-size: 24px;
+    }
+
+    .bellow p{
+        font-size: 38px;
+    }
+
+    .bellow h2{
+        font-size: 62px;
+    }   
+    a{
+        font-size: 24px;
+    } 
+    .icons-gallery img{
+        width: 55px;
+        height: 55px;
+    }
+}
