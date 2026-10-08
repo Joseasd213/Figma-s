@@ -2,7 +2,7 @@
 .card-background {
   background-color: #f3f0e8; /* El color beige del fondo */
   width: 100%;
-  height: 500px;
+  height: 550px;
   
   /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
   /* Ajusta el 85% para cambiar la inclinación */
@@ -24,6 +24,14 @@ header h3{
 
 /*General*/
 
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    margin: 20px;
+}
 p {
     font-size: 18px;
     font-family: "PT Sans Narrow", sans-serif;
@@ -86,10 +94,6 @@ h4{
     font-family: Arial;
     font-weight: 100px;
 }
-
-/*Clases*/
-
-
 
 /*Bellow*/
 
@@ -166,4 +170,29 @@ button{
         width: 55px;
         height: 55px;
     }
+}
+
+/*IA*/
+
+.imagenes {
+    position: relative;
+    /*Sirve para ocupar solamente lo que contiene, convirtiendolo en un poco de bloque y lineal*/
+    display: inline-block;
+}
+
+.imagen-principal {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.imagen-superpuesta {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    /* La pone en el centro de la primera */
+    left: 100px;
+    top: 20px;
+
 }
