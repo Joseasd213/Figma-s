@@ -153,8 +153,36 @@ button{
     background-color: #0699A6;
 }
 
+/*IA*/
 
-@media (min-width: 1200px){
+.imagenes {
+    position: relative;
+    /*Sirve para ocupar solamente lo que contiene, convirtiendolo en un poco de bloque y lineal*/
+    display: inline-block;
+}
+
+.imagen-principal {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+}
+
+.imagen-superpuesta {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    /* La pone en el centro de la primera */
+    left: 100px;
+    top: -10px;
+
+}
+
+
+/*MEDIA*/
+
+
+@media (min-width: 768px) and (min-height:1024px) {
     p{
         font-size: 22px;
     }
@@ -185,29 +213,4 @@ button{
         width: 55px;
         height: 55px;
     }
-}
-
-/*IA*/
-
-.imagenes {
-    position: relative;
-    /*Sirve para ocupar solamente lo que contiene, convirtiendolo en un poco de bloque y lineal*/
-    display: inline-block;
-}
-
-.imagen-principal {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-}
-
-.imagen-superpuesta {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-
-    /* La pone en el centro de la primera */
-    left: 100px;
-    top: 20px;
-
 }
