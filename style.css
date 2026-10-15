@@ -90,7 +90,7 @@ h1{
 }
 
 h2{
-    font-size: 36px;
+    font-size: 32px;
 }
 
 h3 {
@@ -108,6 +108,14 @@ h4{
     font-size: 18px;
     font-family: Arial;
     font-weight: 100px;
+}
+
+.date{
+    font-size: 18px;
+}
+
+.other-h2{
+    font-size: 36px;
 }
 
 /*Bellow*/
@@ -173,7 +181,7 @@ button{
     height: 100px;
 
     /* La pone en el centro de la primera */
-    left: 100px;
+    left: 80px;
     top: -10px;
 
 }
@@ -184,16 +192,13 @@ button{
 
 @media (min-width: 768px) and (min-height:1024px) {
     p{
-        font-size: 22px;
+        font-size: 20px;
     }
     h2{
-       font-size: 48px; 
-    }
-    h1{
-        font-size: 68px;
+       font-size: 32px; 
     }
     h3{
-        font-size: 24px;
+        font-size: 18px;
     }
     header h3{
         font-size: 24px;
@@ -213,4 +218,44 @@ button{
         width: 55px;
         height: 55px;
     }
+
+    .imagen-principal {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+
+    .imagen-superpuesta {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+
+        /* La pone en el centro de la primera */
+        left: 120px;
+        top: -10px;
+
+    }
+
+    main{
+        padding: 0 144px 0 144px;
+    }
+
+    .date p{
+        font-size: 18px;
+    }
+
+    .card-background-up {
+        width: 768px;
+        height: 736px;
+    }
+
+    h1{
+    font-size: 86px;
+    font-weight: 900px;
+    line-height: 76px;
+    word-spacing: -2.17px;
+    margin: 20px;
+    width: 530px;
+    
+}
 }
