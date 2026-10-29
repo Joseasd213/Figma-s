@@ -175,28 +175,61 @@ button{
     /* La pone en el centro de la primera */
     left: 100px;
     top: -10px;
+}
+/*Separador*/
 
+.linea-decorativa {
+    background-color: #0699a6; 
+    width: 54px; 
+    height: 10px;  
+    padding: 0px; 
+    clear: both; 
+    display: block; 
+    margin: 50px 0 20px 0;
 }
 
+.separate-pu{
+    margin-bottom: 30px;
+}
 
 /*MEDIA*/
-
 
 @media (min-width: 768px) and (min-height:1024px) {
     p{
         font-size: 22px;
     }
+    main{
+        padding: 0 140px 0 140px;
+    }
     h2{
        font-size: 48px; 
     }
-    h1{
-        font-size: 68px;
+
+    .linea-decorativa{
+        margin: 70px 0 50px 0;
+    }    
+
+    .imagen-principal{
+        height: 200px;
+        width: 200px;
     }
+
+
     h3{
         font-size: 24px;
     }
+
     header h3{
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 86px;
+        font-weight: 900px;
+        line-height: 76px;
+        word-spacing: -2.17px;
+        margin: 20px;
+        width: 482px;
     }
 
     .bellow p{
@@ -206,11 +239,32 @@ button{
     .bellow h2{
         font-size: 62px;
     }   
+
     a{
         font-size: 24px;
     } 
+
     .icons-gallery img{
         width: 55px;
         height: 55px;
+    }
+    
+    .card-background-up {
+    background-color: #f3f0e8; /* El color beige del fondo */
+    width: 100%;
+    height: 768px;
+    
+    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    /* Ajusta el 85% para cambiar la inclinación */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); 
+    }
+    .card-background-down {
+    background-color: #f3f0e8; /* El color beige del fondo */
+    width: 100%;
+    height: 625px;
+    
+    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    /* Ajusta el 85% para cambiar la inclinación */
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
     }
 }
