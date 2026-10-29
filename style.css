@@ -6,7 +6,7 @@
   
   /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
   /* Ajusta el 85% para cambiar la inclinación */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); 
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
 }
 
 /*Down Header*/
@@ -14,7 +14,7 @@
 .card-background-down {
   background-color: #f3f0e8; /* El color beige del fondo */
   width: 100%;
-  height: 425px;
+  height: 440px;
   
   /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
   /* Ajusta el 85% para cambiar la inclinación */
@@ -142,13 +142,17 @@ h4{
     font-family: "Playfair Display", serif;
 }   
 
+.bellow-contacts{
+    line-height: 40px;
+    
+}
 /*Icons*/
 
 .icons-gallery{
     display: flex;
-    padding-top: 50px;
+    padding-top: 40px;
     justify-content: center;
-    justify-content: space-around;
+    gap: 45px;
 }
 
 
@@ -242,7 +246,7 @@ button{
     }
 
     .bellow p{
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .bellow h2{
@@ -252,11 +256,6 @@ button{
     a{
         font-size: 24px;
     } 
-
-    .icons-gallery img{
-        width: 55px;
-        height: 55px;
-    }
     
     .card-background-up {
     background-color: #f3f0e8; /* El color beige del fondo */
@@ -265,7 +264,7 @@ button{
     
     /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
     /* Ajusta el 85% para cambiar la inclinación */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); 
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
     }
     .card-background-down {
     background-color: #f3f0e8; /* El color beige del fondo */
