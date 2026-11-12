@@ -206,6 +206,26 @@ button{
     margin-bottom: 30px;
 }
 
+/*CLASES - ESCRIPTORI*/
+.about-me{
+    
+}
+
+.skillset{
+
+}
+
+.linea{
+
+}
+
+.no-more{
+    
+}
+
+.yes-more{
+    
+}
 /*MEDIA - TAULETA*/
 
 @media (min-width: 768px) {
@@ -267,7 +287,7 @@ button{
     }
 
     h2{
-       font-size: 48px; 
+       font-size: 32px; 
     }
 
     h1{
@@ -303,5 +323,90 @@ button{
 
 @media (min-width: 1440px) {
 
+    /*Sectores*/
+    main{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        flex-direction: row-reverse; /* Invierte el orden horizontal */
+        gap: 100px;
+    }
 
+    div{
+    padding-top: 20px;
+    }
+
+    /*skillset y about-me*/
+    .skillset{
+        width: 350px
+    }
+
+    .about-me{
+        width: 635px;
+    }
+
+    /*no-more*/
+    .no-more{
+        padding: 0px;
+    }
+
+    /*yes-more*/
+    .yes-more{
+        padding-top: 125px;
+    }
+
+    /*Palabras*/
+    p{
+        font-size: 20px;
+    }
+
+    h2{
+       font-size: 36px; 
+    }
+
+    h1{
+        font-size: 86px;
+        font-weight: 900px;
+        line-height: 76px;
+        word-spacing: -2.17px;
+        margin: 20px;
+        width: 482px;
+    }
+
+    h3{
+        font-size: 18px;
+        width: 400px;
+    }
+
+    /*Footer*/
+    .bellow p{
+        font-size: 36px;
+    }
+
+    .bellow h2{
+        font-size: 66px;
+    }  
+
+    /*Generales*/
+    a{
+        font-size: 24px;
+    } 
+
+    /*Sectores*/
+    main{
+        padding: 0 140px 0 140px;
+    }
+
+    /*Lineas azules*/
+    .linea-decorativa{
+        margin: 70px 0 50px 0;
+    } 
+
+    /*Linea*/
+    .linea {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; /* Alinea los textos por su base aunque tengan distinto tamaño */
+        gap: 10px; /* Espacio de separación entre el título y el párrafo */
+    }
 }
