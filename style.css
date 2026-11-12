@@ -187,8 +187,7 @@ h4{
 /*Buttons*/
 
 button{
-    width: 225px;
-    height: 60px;
+    padding: 15px 50px 15px 50px;
     font-size: 18px;
     color: white;
     background-color: #0699A6;
@@ -451,7 +450,6 @@ button{
 
     /*Mcdonald*/
     .mcdonald{
-        display: flex;
         flex-direction: column;
     }
 
@@ -464,7 +462,7 @@ button{
         /* Ajusta el 85% para cambiar la inclinación */
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
     }
-    
+
     /*Display-flex*/
     .display-flex{
         display: flex;
