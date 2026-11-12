@@ -1,25 +1,28 @@
-/*Up Header*/
+/*Clip-Path del Header*/
+
 .card-background-up {
-  background-color: #f3f0e8; /* El color beige del fondo */
-  width: 100%;
-  height: 594px;
-  
-  /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
-  /* Ajusta el 85% para cambiar la inclinación */
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+    background-color: #f3f0e8; /* El color beige del fondo */
+    width: 100%;
+    height: 594px;
+    
+    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    /* Ajusta el 85% para cambiar la inclinación */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
 }
 
-/*Down Header*/
+/*Clip-Path del Footer*/
 
 .card-background-down {
-  background-color: #f3f0e8; /* El color beige del fondo */
-  width: 100%;
-  height: 440px;
-  
-  /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
-  /* Ajusta el 85% para cambiar la inclinación */
+    background-color: #f3f0e8; /* El color beige del fondo */
+    width: 100%;
+    height: 440px;
+    
+    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    /* Ajusta el 85% para cambiar la inclinación */
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
+
+/*Header*/
 
 header{
     padding-top: 80px;
@@ -36,6 +39,27 @@ header h3{
     line-height: 24px; 
 }
 
+.imagenes {
+    position: relative;
+    /*Sirve para ocupar solamente lo que contiene, convirtiendolo en un poco de bloque y lineal*/
+    display: inline-block;
+}
+
+.imagen-principal {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+}
+
+.imagen-superpuesta {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* La pone en el centro de la primera imagen */
+    left: 80px;
+    top: -10px;
+}
+
 /*General*/
 
 body{
@@ -46,6 +70,7 @@ body{
 main{
     margin: 20px;
 }
+
 p {
     font-size: 18px;
     font-family: "PT Sans Narrow", sans-serif;
@@ -119,7 +144,7 @@ h4{
     font-size: 36px;
 }
 
-/*Bellow*/
+/*Footer*/
 
 .bellow{
     padding: 120px 0 40px 0;
@@ -144,8 +169,8 @@ h4{
 
 .bellow-contacts{
     line-height: 40px;
-    
 }
+
 /*Icons*/
 
 .icons-gallery{
@@ -154,7 +179,6 @@ h4{
     justify-content: center;
     gap: 45px;
 }
-
 
 /*Buttons*/
 
@@ -166,30 +190,7 @@ button{
     background-color: #0699A6;
 }
 
-/*IA*/
-
-.imagenes {
-    position: relative;
-    /*Sirve para ocupar solamente lo que contiene, convirtiendolo en un poco de bloque y lineal*/
-    display: inline-block;
-}
-
-.imagen-principal {
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
-}
-
-.imagen-superpuesta {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-
-    /* La pone en el centro de la primera */
-    left: 80px;
-    top: -10px;
-}
-/*Separador*/
+/*Separador y lineas azules*/
 
 .linea-decorativa {
     background-color: #0699a6; 
@@ -201,39 +202,72 @@ button{
     margin: 50px 0 20px 0;
 }
 
-.separate-pu{
+.separate{
     margin-bottom: 30px;
 }
 
-/*MEDIA*/
+/*MEDIA - TAULETA*/
 
-@media (min-width: 768px) and (min-height:1024px) {
-    p{
-        font-size: 20px;
-    }
-    main{
-        padding: 0 140px 0 140px;
-    }
-    h2{
-       font-size: 48px; 
+@media (min-width: 768px) {
+    /*Clip-Path*/
+    /*Arriba*/
+    .card-background-up {
+        background-color: #f3f0e8; /* El color beige del fondo */
+        width: 100%;
+        height: 768px;
+        
+        /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+        /* Ajusta el 85% para cambiar la inclinación */
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
     }
 
-    .linea-decorativa{
-        margin: 70px 0 50px 0;
-    }    
+    /*Abajo*/
+    .card-background-down {
+        background-color: #f3f0e8; /* El color beige del fondo */
+        width: 100%;
+        height: 625px;
+        
+        /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+        /* Ajusta el 85% para cambiar la inclinación */
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    /*Header*/
+    header h3{
+        font-size: 18px;
+    }
+
+    /*Footer*/
+    .bellow p{
+        font-size: 30px;
+    }
+
+    .bellow h2{
+        font-size: 62px;
+    }   
+
+    /* Imagenes */
+    .imagen-superpuesta {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        /* La pone en el centro de Mcdonald */
+        left: 120px;
+        top: -10px;
+    }
 
     .imagen-principal{
         height: 200px;
         width: 200px;
     }
 
-
-    h3{
-        font-size: 18px;
+    /*Palabras*/
+    p{
+        font-size: 20px;
     }
 
-    header h3{
-        font-size: 18px;
+    h2{
+       font-size: 48px; 
     }
 
     h1{
@@ -245,34 +279,29 @@ button{
         width: 482px;
     }
 
-    .bellow p{
-        font-size: 30px;
+    h3{
+        font-size: 18px;
     }
 
-    .bellow h2{
-        font-size: 62px;
-    }   
-
+    /*Generales*/
     a{
         font-size: 24px;
     } 
-    
-    .card-background-up {
-    background-color: #f3f0e8; /* El color beige del fondo */
-    width: 100%;
-    height: 768px;
-    
-    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
-    /* Ajusta el 85% para cambiar la inclinación */
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+
+    /*Sectores*/
+    main{
+        padding: 0 140px 0 140px;
     }
-    .card-background-down {
-    background-color: #f3f0e8; /* El color beige del fondo */
-    width: 100%;
-    height: 625px;
-    
-    /* Puntos: Top-Left, Top-Right, Bottom-Right, Bottom-Left */
-    /* Ajusta el 85% para cambiar la inclinación */
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-    }
+
+    /*Lineas azules*/
+    .linea-decorativa{
+        margin: 70px 0 50px 0;
+    }    
+}
+
+/*MEDIA - ESCRIPTORI*/
+
+@media (min-width: 1440px) {
+
+
 }
